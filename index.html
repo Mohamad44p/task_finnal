@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .demo {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline; 
+        }
+
+        .vip {
+            font-weight: bold; 
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myDiv">Hello World</div>
+    <h1 id="myH1" class="vip">Hello World</h1>
+    <script>
+        document.querySelector('#myDiv').classList.add('demo');
+        document.querySelector('#myH1').classList.remove('vip');
+    </script>
+
+      
+
+</body>
+</html>
