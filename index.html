@@ -1,30 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        .demo {
-            color: blue;
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: underline; 
-        }
-
-        .vip {
-            font-weight: bold; 
-            color: brown;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Final Exam Layout</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="top" class="container">
+  <header class="header">
+   <div class="first"> HTML Final Exam</div>
+    <div class="second"><img src="pic.jpg" alt="pic"></div>
+    </header>
+  <nav class="navbar">
+    <a href="index.html" class="nav-item active">HOME</a>
+    <a href="Contact.html" class="nav-item">Contact Us</a>
+    <a href="About.html" class="nav-item">About Us</a>
+  </nav>
+</div>
 
-    <div id="myDiv">Hello World</div>
-    <h1 id="myH1" class="vip">Hello World</h1>
-    <script>
-        document.querySelector('#myDiv').classList.add('demo');
-        document.querySelector('#myH1').classList.remove('vip');
-    </script>
-
-      
-
+    <div class="btn-container">
+    <button class="btn-left"><a href="#bottom">Down</a></button>
+    </div>
+<div class="containers">
+    <div class="W3schools-container">
+      <div class="W3schools-box">
+         <h1>W3schools</h1>
+      </div>
+    </div>
+    <h1>What is HTML?</h1>
+    <p><strong>HTML</strong> is the standard markup language for creating Web pages.</p>
+    <ul>
+      <li>HTML stands for Hyper Text Markup Language</li>
+      <li>HTML describes the structure of Web pages using markup</li>
+    </ul>
+    <div class="media-container">
+      <div class="media-box video-box">
+        <div class="video-container">
+        <div class="video-box">
+        <h1>Video</h1>
+        </div>
+    </div>
+        <div class="media-content"><video class="vedio"  controls  src="vedio.mp4"></video></div>
+      </div>
+      <div class="media-box audio-box">
+        <label>Audio</label>
+        <div class="media-content"><audio controls src="sample-file-4.mp3"></audio></div>
+      </div>
+    </div>
+    <div id="bottom" class="footer">
+        <div class="btn-container">
+      <button><a href="#top">Up</a></button>
+    </div>
+      <p>Copy© by Mohamad Abo Omar -2023</p>
+    </div>
+  </div>
 </body>
 </html>
